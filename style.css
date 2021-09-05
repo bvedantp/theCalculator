@@ -1,0 +1,70 @@
+* {
+    margin: 0; 
+    padding: 0; 
+    border: 0;
+}
+
+/*the code block below is literally for centering and nothing else*/
+html {
+    display:flex; 
+    flex-direction:column; 
+    justify-content:center;
+    align-items: center;
+    min-height:100vh;
+}
+
+body {
+    font: 62.5%/1.5  "Lucida Grande", "Lucida Sans", Tahoma, Verdana, sans-serif;
+    color: black;
+    background-color: greenyellow; /*use sky blue for buttons*/
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(4, 10em);
+    grid-template-rows: repeat(6, 6em);   
+}
+
+button {
+    width: 100px;
+    height: 20px;
+    color: blueviolet;
+    background-color: skyblue;
+    border: 1px solid blanchedalmond;
+    border-radius: 15%;
+    text-align: center;
+    padding: 25px;
+    text-align: center;
+    cursor: pointer;
+    font-size:20px;
+    margin: 16px;
+}
+
+#numDisplay {
+    grid-area: 1/1/2/5;
+   
+}
+
+#numpad {
+    grid-area: 2/1/5/4;
+    
+}
+
+#operators {
+    grid-area: 2/4/6/5;
+}
+
+#bottomRow {
+    grid-area: 5/1/6/4;
+}
+
+#erasers {
+    grid-area: 6/1/7/5;
+}
+
+#clear {
+    width: 40%;
+}
+
+#delete {
+    width: 40%;
+}
+
